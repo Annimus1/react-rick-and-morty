@@ -45,10 +45,17 @@ function CharacterList(){
   
   return(
     <div>
+    <h1 className='flex justify-center items-center 
+    text-white font-semibold sm:text-blue-200 md:text-6xl bg-gray-900
+    select-none '
+    >
+    Rick and  Morty
+    </h1>
+    
     <Nav page={page} next={handleNext} prev={handlePrev} />
     {isOpen && <Popup />}
     <div
-    className='w-screen grid grid-cols-3 gap mb-2'
+    className='w-screen grid sm:grid-cols-1 sm:grid-cols md:md:grid-cols-2 gap mb-2'
     >
     {
       characters.map((character)=>{
